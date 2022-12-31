@@ -1,2 +1,19 @@
+Git is distributed verson control system. 
+
+Explaination:
+version control means we create file, edit, save, edit and save repeatedly. 
+distributed means file is shared between local computer and any hosted server like github
+centralized means file is stored in main server 
+
+Commands:
 Initialize git
 git init
+
+Status of git (unstaged or staged)
+git status
+
+Adding in git
+git add fileName.txt (Single)
+git add fileOne.txt fileTwo.txt (One or more)
+git add . (All)
+
