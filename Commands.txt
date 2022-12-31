@@ -5,7 +5,9 @@ version control means we create file, edit, save, edit and save repeatedly.
 distributed means file is shared between local computer and any hosted server like github
 centralized means file is stored in main server 
 
-Commands:
+It is first stored in local computer then staging(git) and finally to host computer
+
+BASIC COMMANDS:
 Initialize git
 git init
 
@@ -17,3 +19,23 @@ git add fileName.txt (Single)
 git add fileOne.txt fileTwo.txt (One or more)
 git add . (All)
 
+Commiting git
+git commit -m "Message" (-m denotes message)
+
+Checking previous commits
+git log (press q to quit)
+git log --oneline (preferred)
+
+To go to specific commit
+git checkout SHA-1 (commitId)
+git checkout master (switch to current)
+
+Push to github
+git remote add origin "url"
+git push origin master
+
+Pull from github
+git pull origin master
+
+Download from github
+git clone "url"
