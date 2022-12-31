@@ -39,3 +39,33 @@ git pull origin master
 
 Download from github
 git clone "url"
+
+
+ADVANCE COMMANDS:
+branch works as layer in photoshop. if its working we merge else we delete it. It doen't affect the master/main branch
+
+branch list
+git branch
+
+Create branch
+git branch branchName
+
+Switch to new branch
+git checkout branchName
+
+**Must switch back to master/main branch to merge**
+git checkout master
+git merge branchName
+
+Delete other branch 
+git branch --d branchName (That has been merged)
+git branch --D branchName (Even if not merged)
+
+Suppose we accidently commit and want to delete/reset current commitId by keeping same contents
+git reset previos_commitId
+
+Reset commitId and contents
+git reset commitId --hard (Deletes all other except provided commitId)
+
+After reseting, we need to forcefully push 
+git push -f origin master
